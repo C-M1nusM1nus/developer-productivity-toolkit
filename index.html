@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Productivity Toolkit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Developer Productivity Toolkit</h1>
+<p>Small tools developers use every day</p>
+</header>
+
+<div class="container">
+
+<!-- JSON TO CSV -->
+<section class="tool">
+<h2>JSON → CSV Converter</h2>
+
+<textarea id="jsonInput" placeholder="Paste JSON array here..."></textarea>
+
+<button onclick="convertJSONtoCSV()">Convert</button>
+
+<textarea id="csvOutput" placeholder="CSV output..." readonly></textarea>
+</section>
+
+
+<!-- BASE64 -->
+<section class="tool">
+<h2>Base64 Encoder / Decoder</h2>
+
+<textarea id="base64Input" placeholder="Enter text..."></textarea>
+
+<div class="button-row">
+<button onclick="encodeBase64()">Encode</button>
+<button onclick="decodeBase64()">Decode</button>
+</div>
+
+<textarea id="base64Output" placeholder="Result..." readonly></textarea>
+</section>
+
+
+<!-- REGEX TESTER -->
+<section class="tool">
+<h2>Regex Tester</h2>
+
+<input id="regexPattern" placeholder="Enter regex pattern">
+
+<textarea id="regexText" placeholder="Enter text to test..."></textarea>
+
+<button onclick="testRegex()">Test Regex</button>
+
+<pre id="regexResult"></pre>
+</section>
+
+
+<!-- TIMESTAMP -->
+<section class="tool">
+<h2>Timestamp → Human Date</h2>
+
+<input id="timestampInput" placeholder="Enter Unix timestamp">
+
+<button onclick="convertTimestamp()">Convert</button>
+
+<p id="timestampResult"></p>
+</section>
+
+</div>
+
+<footer>
+<p>Built for developer productivity</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
